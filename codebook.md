@@ -5,7 +5,7 @@ This codebook describes the variables, units, summary choices and study design u
 
 1. Variables
 ============
-This tidy dataset contains the following 81 variables:
+This tidy dataset contains the following variables:
 
 subject  
 activity  
@@ -97,7 +97,7 @@ The reference to "BodyBody" on the original variable names was probably an error
 
 **Partial designations used in forming names on the variables and their meaning:**
 
-time - a reference to time domain signals;
+time - a reference to time domain signals;  
 fastfourier - a reference to Fast Fourier Transform (FFT) frequency domain signals;  
 jerk - refers to Jerk signals;  
 acc - refers to acceleration;  
@@ -110,9 +110,9 @@ mean - refers to mean;
 std - refers to standard deviation;  
 x, y, z - refers to the 3-axial signals in the X, Y and Z directions.  
 
-As an example, **time_bodyaccjerkmag_std** variable name represents the process used to estimate the values it holds:  **time** domain signals were captured, then filtered to remove noise. The **body** linear **acceleration** was derived in time to obtain **jerk** signals and the **magnitude** of this signals was calculated. Finally the **standard deviation** was estimated. This value is now a mean grouped by subject and activity. 
+As an example, **time_bodyaccjerkmag_std** variable name represents the process used to estimate the values it holds:  **time** domain signals were captured, then filtered to remove noise. The **body** linear **acceleration** (acc) was derived in time to obtain **jerk** signals and the **magnitude** (mag) of this signals was calculated. Finally the **standard deviation** (std) was estimated. This value is now a mean grouped by subject and activity. 
 
-A detailed description of this process for each of the 81 variable names is not made here because it would be too extent and because the prior example ilustrates how to do it. If you need more explanation on the process behind some variable names, please take a look at the description of the original variables collected on the experiment which can be found in the features_info.txt file on the UCI HAR Dataset directory.
+A detailed description of this name formation process for each of the 81 variable names is not made here because it would be too extent and because the prior example ilustrates how to do it. If you need more explanation on the process behind some variable names, please take a look at the description of the original variables collected on the experiment which can be found in the features_info.txt file on the UCI HAR Dataset directory.
 
 This tidy dataset **does not contain** the variables which **do not refer to mean and standard deviation** present on that directory.
 
@@ -122,9 +122,9 @@ The values on the tidy dataset are the **average values** of variables referent 
 =========================
 Since the tidy dataset is mostly a collection of means and standard deviations, the values are normalized, except for the values of subject and activity.
 
-The variable subject varies from 1 to 30 and is an identifier of the subject who carried out the experiment.
+The variable **subject** varies from 1 to 30 and is an identifier of the subject who carried out the experiment.
 
-The variable activities has 6 values which correspond to the subject performed activities on the experiment:
+The variable **activities** has 6 values which correspond to the subject performed activities on the experiment:
 
 WALKING  
 WALKING_UPSTAIRS  
@@ -133,17 +133,17 @@ SITTING
 STANDING  
 LAYING  
 
-The variables names that have **meanfreq** at the end of the name refer originally to weighted average of the frequency components to obtain a mean frequency. Their value on the tidy dataset is the mean of this value grouped by subject and activity. 
+The variables names that have **meanfreq** at the end of their name refer originally to weighted average of the frequency components to obtain a mean frequency. Their value on the tidy dataset is the mean of this value grouped by subject and activity. 
 
 3. Summary Choices
 ==================
 
-The tidy dataset results mainly from merging the X_train.txt and X_test.txt files with the subject_train.txt, subject_test.txt, y_train.txt and y_test.txt  and only contains a subset of the original data. The inertial signals folder and data **was not used** and that data is not part of the final tidy data set. Activities are originally numbers and were tranformed into descriptive alphanumeric values described in 2. Remaining variables in the tidy dataset are extracted only from the measurements on the mean and standard deviation for each measurement. The final dataset has the average of each variable for each activity and each subject.
+The tidy dataset results mainly from merging the X_train.txt and X_test.txt files with the subject_train.txt, subject_test.txt, y_train.txt and y_test.txt  and only contains a subset of the original data.   The inertial signals folder and data **was not used** and that data is not part of the final tidy data set.   Activities are originally numbers and were tranformed into descriptive alphanumeric values described in 2.   Remaining variables in the tidy dataset are extracted only from the measurements on the mean and standard deviation for each measurement.   The final dataset has the average of each variable for each activity and each subject.
 
 4. Study Design
 ===============
 
-The data used in this tidy dataset was referenced in the coursera "Getting and Cleaning Data" course provided by Johns Hopkins Bloomberg School of Public Health and coursera. You can take or access this course at
+The data used in this tidy dataset was referenced in the coursera **"Getting and Cleaning Data"** course provided by Johns Hopkins Bloomberg School of Public Health and coursera. You can take the course or access it at
 
 https://www.coursera.org/course/getdata
 
