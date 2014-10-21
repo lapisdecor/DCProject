@@ -45,12 +45,16 @@ run_analysis <- function(){
         x$activity <- activ[,1]
         
         ## change Activity values to match activity labels
-        x$activity[x$activity == 1] <- "WALKING"
-        x$activity[x$activity == 2] <- "WALKING_UPSTAIRS"
-        x$activity[x$activity == 3] <- "WALKING_DOWNSTAIRS"
-        x$activity[x$activity == 4] <- "SITTING"
-        x$activity[x$activity == 5] <- "STANDING"
-        x$activity[x$activity == 6] <- "LAYING"
+        # this can be done like this
+#         x$activity[x$activity == 1] <- "WALKING"
+#         x$activity[x$activity == 2] <- "WALKING_UPSTAIRS"
+#         x$activity[x$activity == 3] <- "WALKING_DOWNSTAIRS"
+#         x$activity[x$activity == 4] <- "SITTING"
+#         x$activity[x$activity == 5] <- "STANDING"
+#         x$activity[x$activity == 6] <- "LAYING"
+
+        # or it can simply be done by creating factors from activity_l
+        x$activity <- factor(x$activity, levels = 1:6, labels = activity_l[,2])
         
         ## extracts only the measurements on the mean and standard deviation
         ## for each measurement
@@ -74,6 +78,18 @@ run_analysis <- function(){
         
         # replace bodybody for simply body
         names(x) <- gsub("bodybody", "body", names(x))
+
+        # extend abbreviated components used in variable names
+        names(x) <- gsub("acc", "acceleration", names(x))
+        names(x) <- gsub("gyro", "gyroscope", names(x))
+        names(x) <- gsub("mag", "magnitude", names(x))
+        
+        # freq and std in variable names were kept because they are commonly used
+        # they are here as an option, please uncomment to use them.
+        # if you use them, you should change also the names used when reorganizing
+        # the columns, or you will get an error 
+        #names(x) <- gsub("freq", "frequency", names(x))
+        #names(x) <- gsub("std", "standard_deviation", names(x))
         
         ## create a second, independent tidy data set with the average
         ## of each variable for each activity and each subject.
@@ -87,12 +103,12 @@ run_analysis <- function(){
         groupedData <- group_by(new_data, subject, activity)
         
         # reorganize the order of the columns
-        selData <- select(groupedData, subject, activity, time_bodyacc_mean_x:fastfourier_bodygyrojerkmag_meanfreq)
+        selData <- select(groupedData, subject, activity, time_bodyacceleration_mean_x:fastfourier_bodygyroscopejerkmagnitude_meanfreq)
         
         # calculate the mean for each activity and each subject
         tidy2 <- summarise_each(selData, funs(mean))
         
-        ## write data to a file
+        ## write data to a file on this repository
         write.table(tidy2, file="./DCProject/tidysamsung.txt", row.names=F)
         
         
