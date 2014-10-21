@@ -21,7 +21,7 @@ A more extensive description of the changes made to the variables names is avail
 
 **How to run the script**
 To run the script you should:  
-1) use a git account, fork the repository and fetch all the files to a directory inside your R working directory  
+1) use a git account, fork the repository and clone the files to a directory inside your R working directory  
 2) run RStudio  
 3) open the run_analysis.R file, select its contents and press Run  
 4) issue the run_analysis() command  
