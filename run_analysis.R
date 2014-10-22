@@ -80,14 +80,20 @@ run_analysis <- function(){
         names(x) <- gsub("bodybody", "body", names(x))
 
         # extend abbreviated components used in variable names
-        names(x) <- gsub("acc", "acceleration", names(x))
-        names(x) <- gsub("gyro", "gyroscope", names(x))
-        names(x) <- gsub("mag", "magnitude", names(x))
+        names(x) <- gsub("acc", "acceleration_", names(x))
+        names(x) <- gsub("gyro", "gyroscope_", names(x))
+        names(x) <- gsub("mag", "magnitude_", names(x))
+
+        # include missing underscores and remove double underscores
+        names(x) <- gsub("gravity", "gravity_", names(x))
+        names(x) <- gsub("body", "body_", names(x))
+        names(x) <- gsub("jerk", "jerk_", names(x))
+        names(x) <- gsub("__", "_", names(x))
         
         # freq and std in variable names were kept because they are commonly used
         # they are here as an option, please uncomment to use them.
         # if you use them, you should change also the names used when reorganizing
-        # the columns, or you will get an error 
+        # the columns in the select() function, or you will get an error 
         #names(x) <- gsub("freq", "frequency", names(x))
         #names(x) <- gsub("std", "standard_deviation", names(x))
         
@@ -103,14 +109,12 @@ run_analysis <- function(){
         groupedData <- group_by(new_data, subject, activity)
         
         # reorganize the order of the columns
-        selData <- select(groupedData, subject, activity, time_bodyacceleration_mean_x:fastfourier_bodygyroscopejerkmagnitude_meanfreq)
+        selData <- select(groupedData, subject, activity, time_body_acceleration_mean_x:fastfourier_body_gyroscope_jerk_magnitude_meanfreq)
         
         # calculate the mean for each activity and each subject
         tidy2 <- summarise_each(selData, funs(mean))
         
         ## write data to a file on this repository
         write.table(tidy2, file="./DCProject/tidysamsung.txt", row.names=F)
-        
-        
-        
+                
 }

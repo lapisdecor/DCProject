@@ -9,111 +9,113 @@ This tidy dataset contains the following variables:
 
 subject  
 activity  
-time_bodyacceleration_mean_x  
-time_bodyacceleration_mean_y  
-time_bodyacceleration_mean_z  
-time_bodyacceleration_std_x  
-time_bodyacceleration_std_y  
-time_bodyacceleration_std_z  
-time_gravityacceleration_mean_x  
-time_gravityacceleration_mean_y  
-time_gravityacceleration_mean_z  
-time_gravityacceleration_std_x  
-time_gravityacceleration_std_y  
-time_gravityacceleration_std_z  
-time_bodyaccelerationjerk_mean_x  
-time_bodyaccelerationjerk_mean_y  
-time_bodyaccelerationjerk_mean_z  
-time_bodyaccelerationjerk_std_x  
-time_bodyaccelerationjerk_std_y  
-time_bodyaccelerationjerk_std_z  
-time_bodygyroscope_mean_x  
-time_bodygyroscope_mean_y  
-time_bodygyroscope_mean_z  
-time_bodygyroscope_std_x  
-time_bodygyroscope_std_y  
-time_bodygyroscope_std_z  
-time_bodygyroscopejerk_mean_x  
-time_bodygyroscopejerk_mean_y  
-time_bodygyroscopejerk_mean_z  
-time_bodygyroscopejerk_std_x  
-time_bodygyroscopejerk_std_y  
-time_bodygyroscopejerk_std_z  
-time_bodyaccelerationmagnitude_mean  
-time_bodyaccelerationmagnitude_std  
-time_gravityaccelerationmagnitude_mean  
-time_gravityaccelerationmagnitude_std  
-time_bodyaccelerationjerkmagnitude_mean  
-time_bodyaccelerationjerkmagnitude_std  
-time_bodygyroscopemagnitude_mean  
-time_bodygyroscopemagnitude_std  
-time_bodygyroscopejerkmagnitude_mean  
-time_bodygyroscopejerkmagnitude_std  
-fastfourier_bodyacceleration_mean_x  
-fastfourier_bodyacceleration_mean_y  
-fastfourier_bodyacceleration_mean_z  
-fastfourier_bodyacceleration_std_x  
-fastfourier_bodyacceleration_std_y  
-fastfourier_bodyacceleration_std_z  
-fastfourier_bodyacceleration_meanfreq_x  
-fastfourier_bodyacceleration_meanfreq_y  
-fastfourier_bodyacceleration_meanfreq_z  
-fastfourier_bodyaccelerationjerk_mean_x  
-fastfourier_bodyaccelerationjerk_mean_y  
-fastfourier_bodyaccelerationjerk_mean_z  
-fastfourier_bodyaccelerationjerk_std_x  
-fastfourier_bodyaccelerationjerk_std_y  
-fastfourier_bodyaccelerationjerk_std_z  
-fastfourier_bodyaccelerationjerk_meanfreq_x  
-fastfourier_bodyaccelerationjerk_meanfreq_y  
-fastfourier_bodyaccelerationjerk_meanfreq_z  
-fastfourier_bodygyroscope_mean_x  
-fastfourier_bodygyroscope_mean_y  
-fastfourier_bodygyroscope_mean_z  
-fastfourier_bodygyroscope_std_x  
-fastfourier_bodygyroscope_std_y  
-fastfourier_bodygyroscope_std_z  
-fastfourier_bodygyroscope_meanfreq_x  
-fastfourier_bodygyroscope_meanfreq_y  
-fastfourier_bodygyroscope_meanfreq_z  
-fastfourier_bodyaccelerationmagnitude_mean  
-fastfourier_bodyaccelerationmagnitude_std  
-fastfourier_bodyaccelerationmagnitude_meanfreq  
-fastfourier_bodyaccelerationjerkmagnitude_mean  
-fastfourier_bodyaccelerationjerkmagnitude_std  
-fastfourier_bodyaccelerationjerkmagnitude_meanfreq  
-fastfourier_bodygyroscopemagnitude_mean  
-fastfourier_bodygyroscopemagnitude_std  
-fastfourier_bodygyroscopemagnitude_meanfreq  
-fastfourier_bodygyroscopejerkmagnitude_mean  
-fastfourier_bodygyroscopejerkmagnitude_std  
-fastfourier_bodygyroscopejerkmagnitude_meanfreq
+time_body_acceleration_mean_x  
+time_body_acceleration_mean_y  
+time_body_acceleration_mean_z  
+time_body_acceleration_std_x  
+time_body_acceleration_std_y  
+time_body_acceleration_std_z  
+time_gravity_acceleration_mean_x  
+time_gravity_acceleration_mean_y  
+time_gravity_acceleration_mean_z  
+time_gravity_acceleration_std_x  
+time_gravity_acceleration_std_y  
+time_gravity_acceleration_std_z  
+time_body_acceleration_jerk_mean_x  
+time_body_acceleration_jerk_mean_y  
+time_body_acceleration_jerk_mean_z  
+time_body_acceleration_jerk_std_x  
+time_body_acceleration_jerk_std_y  
+time_body_acceleration_jerk_std_z  
+time_body_gyroscope_mean_x  
+time_body_gyroscope_mean_y  
+time_body_gyroscope_mean_z  
+time_body_gyroscope_std_x  
+time_body_gyroscope_std_y  
+time_body_gyroscope_std_z  
+time_body_gyroscope_jerk_mean_x  
+time_body_gyroscope_jerk_mean_y  
+time_body_gyroscope_jerk_mean_z  
+time_body_gyroscope_jerk_std_x  
+time_body_gyroscope_jerk_std_y  
+time_body_gyroscope_jerk_std_z  
+time_body_acceleration_magnitude_mean  
+time_body_acceleration_magnitude_std  
+time_gravity_acceleration_magnitude_mean  
+time_gravity_acceleration_magnitude_std  
+time_body_acceleration_jerk_magnitude_mean  
+time_body_acceleration_jerk_magnitude_std  
+time_body_gyroscope_magnitude_mean  
+time_body_gyroscope_magnitude_std  
+time_body_gyroscope_jerk_magnitude_mean  
+time_body_gyroscope_jerk_magnitude_std  
+fastfourier_body_acceleration_mean_x  
+fastfourier_body_acceleration_mean_y  
+fastfourier_body_acceleration_mean_z  
+fastfourier_body_acceleration_std_x  
+fastfourier_body_acceleration_std_y  
+fastfourier_body_acceleration_std_z  
+fastfourier_body_acceleration_meanfreq_x  
+fastfourier_body_acceleration_meanfreq_y  
+fastfourier_body_acceleration_meanfreq_z  
+fastfourier_body_acceleration_jerk_mean_x  
+fastfourier_body_acceleration_jerk_mean_y  
+fastfourier_body_acceleration_jerk_mean_z  
+fastfourier_body_acceleration_jerk_std_x  
+fastfourier_body_acceleration_jerk_std_y  
+fastfourier_body_acceleration_jerk_std_z  
+fastfourier_body_acceleration_jerk_meanfreq_x  
+fastfourier_body_acceleration_jerk_meanfreq_y  
+fastfourier_body_acceleration_jerk_meanfreq_z  
+fastfourier_body_gyroscope_mean_x  
+fastfourier_body_gyroscope_mean_y  
+fastfourier_body_gyroscope_mean_z  
+fastfourier_body_gyroscope_std_x  
+fastfourier_body_gyroscope_std_y  
+fastfourier_body_gyroscope_std_z  
+fastfourier_body_gyroscope_meanfreq_x  
+fastfourier_body_gyroscope_meanfreq_y  
+fastfourier_body_gyroscope_meanfreq_z  
+fastfourier_body_acceleration_magnitude_mean  
+fastfourier_body_acceleration_magnitude_std  
+fastfourier_body_acceleration_magnitude_meanfreq  
+fastfourier_body_acceleration_jerk_magnitude_mean  
+fastfourier_body_acceleration_jerk_magnitude_std  
+fastfourier_body_acceleration_jerk_magnitude_meanfreq  
+fastfourier_body_gyroscope_magnitude_mean  
+fastfourier_body_gyroscope_magnitude_std  
+fastfourier_body_gyroscope_magnitude_meanfreq  
+fastfourier_body_gyroscope_jerk_magnitude_mean  
+fastfourier_body_gyroscope_jerk_magnitude_std  
+fastfourier_body_gyroscope_jerk_magnitude_meanfreq
 
 
 Other then the subject and activity variable names, wich were added, variable names were modified from the original names which can be found in the features.txt file in the UCI HAR directory.
 
-The names were modified to produce a more clear way to identify the variables by changing the used labels to lower case, removing parentesis and replacing hyfens for underscores, and using more extense names, specially in the case of the first character where "t"" was replaced for "time", and "f" was replaced for "fastfourier". **The "std" and "freq" in names were kept since thet are widelly used to designate standard deviation and frequency, and because they makes variable names more readable**. One can argue that underscores shouldn't be used but in this case they make variables more human readable. It was not used between all designations because it would make the already extended designations in variable names even bigger, and therefore less readable. Camel case was removed and is deliberatelly not used. 
+The names were modified to produce a more clear way to identify the variables by changing the used labels to lower case, removing parentesis, replacing hyfens for underscores, and using more extense names, specially in the case of the first character where "t"" was replaced for "time", and "f" was replaced for "fastfourier". **The "std" and "freq" in names were not changed since they are widelly used to designate standard deviation and frequency, and because they makes variable names more readable**. One can argue that underscores shouldn't be used but in this case they make variables more human readable. It was not used between all designations because it made sense to group some of the designations. Camel case was removed and is deliberatelly not used. 
 
 The reference to "BodyBody" on the original variable names was probably an error because has no evident particular meaning and was replaced simply for "body".
 
-**Partial designations and other used in forming names on the variables, and their meaning:**
+**Partial designations and other used on forming names of the variables, and their meaning:**
 
 time - a reference to time domain signals;  
 fastfourier - a reference to Fast Fourier Transform (FFT) frequency domain signals;  
 jerk - refers to Jerk signals;  
-acceleration - refers acceleration;  
+acceleration - refers to acceleration;  
 gravity - refers to gravity;  
 gyroscope - refers to gyroscope signals;  
-body - refers to body (gravity/acceleration);   
+body - refers to body motion (gravity/acceleration);   
 magnitude - refers to magnitude;  
 freq - refers to frequency;  
 mean - refers to mean;  
 std - refers to standard deviation;  
 x, y, z - refers to the 3-axial signals in the X, Y and Z directions.  
 
-As an example, **time_bodyaccelerationjerkmagnitude_std** variable name represents the process used to estimate the values it holds:  **time** domain signals were captured, then filtered to remove noise. The **body** linear **acceleration** was derived in time to obtain **jerk** signals and the **magnitude** of this signals was calculated. Finally the **standard deviation** (std) was estimated. This value is now on the tidy data the average for each subject and each activity. 
+The variable names composition refer to the multiple processes of transformation of the data from the collected observations to the final dataset wich was used as raw data and then transformed again in this project.   
 
-A detailed description of each name formation process for each of the variable names is not made here because it would be too extent and because the prior example ilustrates how to do it. If you need more explanation on the process behind some variable names, please take a look at the description of the original variables collected on the experiment which can be found in the features_info.txt file on the UCI HAR Dataset directory.
+As an example, **time_body_acceleration_jerk_magnitude_std** variable name represents the process used to estimate the values it holds:  **time** domain signals were captured, then filtered to remove noise. The **body** linear **acceleration** was derived in time to obtain **jerk** signals and the **magnitude** of this signals was calculated. Finally the **standard deviation** (std) was estimated. This value is now on our tidy data the grouped average for each subject and each activity. 
+
+A detailed description of each name formation process for each of the variable names is not made here because it would be too extent and because the prior example ilustrates how to do it. If you need more explanation on the process behind some variable names, please take a look at the description of the original variables collected on the experiment which can be found in the features_info.txt file on the UCI HAR Dataset directory. You should also read the descripion made on the source site referenced in the README.md file of this repository.
 
 This tidy dataset **does not contain** the variables which **do not refer to mean and standard deviation** present on the UCI HAR Dataset directory.
 
@@ -153,5 +155,3 @@ The data is **"Human Activity Recognition Using Smartphones Data Set"**, a human
 The data was donated to UCI on 2012-12-10 and its source is Smartlab - Non Linear Complex Systems Laboratory, one of the Research Laboratories at the DITEN Department of the University of Genova, Italy.
 
 Please read the README.txt file on the UCI HAR Dataset directory for more information about the raw dataset. You should also check the README.md file of this repository which has links for the original dataset and for the description of the data and experiment.
-
-The raw data was downloaded and commited to this repository on September 21, 2014.
