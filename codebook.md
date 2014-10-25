@@ -92,26 +92,34 @@ fastfourier_body_gyroscope_jerk_magnitude_meanfreq
 
 Other then the subject and activity variable names, wich were added, variable names were modified from the original names which can be found in the features.txt file in the UCI HAR directory.
 
-The names were modified to produce a more clear way to identify the variables by changing the used labels to lower case, removing parentesis, replacing hyfens for underscores, and using more extense names, specially in the case of the first character where "t"" was replaced for "time", and "f" was replaced for "fastfourier". **The "std" and "freq" in names were not changed since they are widelly used to designate standard deviation and frequency, and because they makes variable names more readable**. One can argue that underscores shouldn't be used but in this case they make variables more human readable. It was not used between all designations because it made sense to group some of the designations. Camel case was removed and is deliberatelly not used. 
-
+The names were modified to produce a more clear way to identify the variables by changing the used labels to lower case, removing parentesis, replacing hyfens for underscores, and using more extense names, specially in the case of the first character where "t"" was replaced for "time", and "f" was replaced for "fastfourier". **The "std" and "freq" in names were not changed since they are widelly used to designate standard deviation and frequency, and because they makes variable names more readable**. One can argue that underscores shouldn't be used but in this case they make variables more human readable. It was not used between all designations because it made sense to group some of the designations. Camel case was removed and is deliberatelly not used.   
+   
+One can also argue that the names of the variables (except the first two) should countain a final designation "average" because they now represent one. But that designation on all the variables would increase the already big names and as all their values are averages it does not seem necessary.   
+   
 The reference to "BodyBody" on the original variable names was probably an error because has no evident particular meaning and was replaced simply for "body".
+   
+**Partial designations and combinations used on forming names of the variables, and their meaning:**
+    
+time - a reference to the raw time domain signals;  
+x, y, z - refers to the 3-axial signals in the X, Y and Z directions.  
+   
+body_acceleration - refers to the body linear acceleration signals;     
+body_gyroscope - refers to angular velocity gyroscope signals;  
 
-**Partial designations and other used on forming names of the variables, and their meaning:**
+gravity_acceleration - refers to gravity acceleration signals;     
 
-time - a reference to time domain signals;  
-fastfourier - a reference to Fast Fourier Transform (FFT) frequency domain signals;  
-jerk - refers to Jerk signals;  
-acceleration - refers to acceleration;  
-gravity - refers to gravity;  
-gyroscope - refers to gyroscope signals;  
-body - refers to body motion (gravity/acceleration);   
-magnitude - refers to magnitude;  
+jerk - refers to signals derived in time (Jerk signals);   
+    
+magnitude - refers to the aplly of magnitude, calculated with an Euclidean Norm;  
+   
+fastfourier - a reference to a last transformation of signals that were transformed with a Fast Fourier Transform (FFT), becomming frequency domain signals;   
+   
 freq - refers to frequency;  
 mean - refers to mean;  
 std - refers to standard deviation;  
-x, y, z - refers to the 3-axial signals in the X, Y and Z directions.  
 
-The variable names composition refer to the multiple processes of transformation of the data from the collected observations to the final dataset wich was used as raw data and then transformed again in this project.   
+
+The variable names composition refer to the multiple processes of transformation of the data from the collected observations to the final dataset. This dataset was used as raw data and then transformed again in this project.   
 
 As an example, **time_body_acceleration_jerk_magnitude_std** variable name represents the process used to estimate the values it holds:  **time** domain signals were captured, then filtered to remove noise. The **body** linear **acceleration** was derived in time to obtain **jerk** signals and the **magnitude** of this signals was calculated. Finally the **standard deviation** (std) was estimated. This value is now on our tidy data the grouped average for each subject and each activity. 
 

@@ -30,10 +30,14 @@ To run the script you should:
 4) issue the run_analysis() command  
    
    
-**If you just want to see the tidy data**    
+**If you just want to see the tidy data**  
+   
+You can click on the file on this repository
 
-You can download it, then open the tidysamsung.txt in a text editor like gEdit or you read it in R with:     
-` t_data <- read.table("./DCProject/tidysamsung.txt", header = T)`   
+**How to open the tidy data**   
+
+You can run the script if you want or you can just use "save as" then open the tidysamsung.txt in a text editor like gEdit or you can put it R working directory and read it with:     
+` t_data <- read.table("tidysamsung.txt", header = T)`   
 
     
 **About the UCI HAR Dataset**    
