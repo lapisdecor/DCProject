@@ -32,11 +32,11 @@ To run the script you should:
    
 **If you just want to see the tidy data**  
    
-You can click on the file on this repository
+You can click on the tidysamsung.txt file on this repository.
 
 **How to open the tidy data**   
 
-You can run the script if you want or you can just use "save as" then open the tidysamsung.txt in a text editor like gEdit or you can put it R working directory and read it with:     
+You first can run the script or you can just use "save as" and then open the tidysamsung.txt in a text editor like gEdit or you can put it R working directory and read it with:     
 ` t_data <- read.table("tidysamsung.txt", header = T)`   
 
     
