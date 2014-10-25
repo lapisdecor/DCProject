@@ -118,8 +118,9 @@ freq - refers to frequency;
 mean - refers to mean;  
 std - refers to standard deviation;  
 
+The variables names that have **meanfreq** at the end of their name refer originally to weighted average of the frequency components to obtain a mean frequency. Their value on the tidy dataset is the mean of this value grouped for each subject and activity.
 
-The variable names composition refer to the multiple processes of transformation of the data from the collected observations to the final dataset. This dataset was used as raw data and then transformed again in this project.   
+The variable names composition refer to the **multiple processes of transformation of the data** from the collected observations to the final dataset. This dataset was used as raw data and then transformed again in this project.   
 
 As an example, **time_body_acceleration_jerk_magnitude_std** variable name represents the process used to estimate the values it holds:  **time** domain signals were captured, then filtered to remove noise. The **body** linear **acceleration** was derived in time to obtain **jerk** signals and the **magnitude** of this signals was calculated. Finally the **standard deviation** (std) was estimated. This value is now on our tidy data the grouped average for each subject and each activity. 
 
@@ -143,8 +144,7 @@ WALKING_DOWNSTAIRS
 SITTING  
 STANDING  
 LAYING  
-
-The variables names that have **meanfreq** at the end of their name refer originally to weighted average of the frequency components to obtain a mean frequency. Their value on the tidy dataset is the mean of this value grouped for each subject and activity. 
+    
 
 3. Summary Choices
 ==================
